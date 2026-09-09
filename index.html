@@ -50,7 +50,10 @@
     <script defer="defer" src="error_screen.bundle.js"></script>
     <script defer="defer" src="main.bundle.js"></script>
     <!-- Vercel Web Analytics -->
-    <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
   </head>
   <body>
     <canvas id="screen"></canvas>
